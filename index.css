@@ -12,6 +12,10 @@ h2 {
     color: #A9F0D1;
     text-shadow: 1px 1px black;
 } 
+
+.centerTxt {
+    text-align: center;
+}
     
 h3 {
     font-family: "Ubuntu", sans-serif;
@@ -126,6 +130,9 @@ h3 {
     margin-left: 15px;
 }
 
+.backtotop {
+    color: #FFA69E;
+}
 
 a {
     float: right;
@@ -209,12 +216,14 @@ a {
 }
 
 .carousel .carousel-actions button#carousel-button-prev {
-    margin-left: -20px;
+    margin-left: -18px;
+    margin-top: 35px;
     opacity: 50%;
 }
 
 .carousel .carousel-actions button#carousel-button-next {
-    margin-right: 10px;
+    margin-right: 12px;
+    margin-top: 35px;
     opacity: 50%;   
 }
 
