@@ -11,7 +11,7 @@ function hideAllSlides() {
         slide.classList.remove('carousel-item-visible');
         slide.classList.add('carousel-item-hidden');
     }
-}
+} 
 
 function moveToNextSlide() {
     hideAllSlides();
