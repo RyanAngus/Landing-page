@@ -168,14 +168,37 @@ a {
 .carousel {
     max-width: 700px;
     position: relative;
-
     margin-left: -30px;
     margin-bottom: 50px;
     padding: 0px 30px 40px 30px;
 }
 
+.carousel-card {
+    width: 600px;
+    height: 350px;
+    background-color: #d4fcea;
+    font-family: "Ubuntu", sans-serif;
+    font-size: 1.5rem;
+    padding: 10px 5px 10px 15px;
+    margin-left: -10px;
+}
+
+.carousel h1 {
+    font-family: 'Rock Salt', cursive;
+    text-align: center; 
+    font-size: 1.5rem;
+}
+
+
 .carouselContainer {
-    width: 700px;
+    width: 700px;   
+}
+
+figure {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    
 }
 
 .carousel .carousel-item,
@@ -190,8 +213,9 @@ a {
 
 .carousel .carousel-item img {
     width: 100%;
-    max-width: 600px;
-    height: auto;
+    max-width: 125px;
+    border-radius: 50%;
+    object-fit: cover;
 }
 
 .carousel .carousel-actions {
@@ -211,8 +235,8 @@ a {
     font-size: 16px;
     font-weight: bold;
     cursor: pointer;
-    width: 40px;
-    height: 40px;
+    width: 20px;
+    height: 20px;
 }
 
 .carousel .carousel-actions button#carousel-button-prev {
@@ -235,6 +259,43 @@ a {
         opacity: 1;
     }
 }
+
+/* SHADOW POP */
+
+.shadow-pop-tr {
+	animation:  shadow-pop-tr 1s cubic-bezier(0.470, 0.000, 0.745, 0.715) both;
+}
+
+@keyframes shadow-pop-tr {
+    0% {
+      box-shadow: 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e;
+      transform: translateX(0) translateY(0);
+    }
+    100% {
+      box-shadow: 1px -1px #3e3e3e, 2px -2px #3e3e3e, 3px -3px #3e3e3e, 4px -4px #3e3e3e, 5px -5px #3e3e3e, 6px -6px #3e3e3e, 7px -7px #3e3e3e, 8px -8px #3e3e3e;
+      transform: translateX(-8px) translateY(8px);
+    }
+  }
+
+  /* PULSATE */
+
+  .pulsate-fwd {
+	animation: pulsate-fwd 0.5s ease-in-out 1s 3 both;
+}
+  
+@keyframes pulsate-fwd {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.1);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+  
+  
 
 
 /* mobile */

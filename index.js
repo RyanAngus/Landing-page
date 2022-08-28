@@ -26,6 +26,7 @@ function moveToNextSlide() {
     
 }
 
+
 function moveToPrevSlide() {
     hideAllSlides();
     
@@ -38,15 +39,8 @@ function moveToPrevSlide() {
     slides[slidePosition].classList.add("carousel-item-visible");
 }
 
+setInterval(function() {
+    moveToNextSlide();
+}, 5000)                        //animating slides
 
 
-// Tried to automate the carousel using newer js function, but couldn't get it to work
-
-// const observer = new IntersectionObserver(entries => {
-//     entries.forEach(entry => {
-//       const intersecting = entry.isIntersecting
-//       entry.slides = intersecting ? slidePosition ++
-//     })
-//   })
-
-//   observer.observe(document.getElementById("carousel"))
