@@ -1,24 +1,51 @@
+/* FONTS */
 /* font-family: 'Ubuntu', sans-serif; */
 /* font-family: 'Rock Salt', cursive; */
 @font-face { font-family: Playball; src: url('Playball-Regular.ttf'); } 
+/*  */
+
+/* COLORS */
+/* color: #3D5A80; DARK BLUE  */
+/* color: #98C1D9; LIGHT BLUE  */
+/* color: #EE6C4D; RED ORG  */
+/* color: #293241; BLACK  */
+/* color: #E0FBFC; LIGHTEST BLUE  */
+
+
+/*  */
 
 body {
-    background-color: #A9F0D1;
+    /* background-color: rgba(238, 108, 77, .65); */
+    /* background-image: url(images/swirl_pattern.png); */
+    background-image: url(images/tiles.png);
+    padding: 0;
+    margin: 0;
+    line-height: 1.6;
 }
 
 h2 {
     font-family: "Rock Salt", cursive;
     font-weight: 700;
-    color: #A9F0D1;
-    text-shadow: 1px 1px black;
+    color:rgba(197,179,88, .85);
+    text-shadow: 1px 1px #232323;
 } 
 
 .centerTxt {
     text-align: center;
 }
+
+.line {
+    border-bottom: 1px solid #232323;
+    padding: 2em;
+    margin-bottom: 1em;
+    width: 50%;
+    margin: 0 auto;
+    
+}
     
 h3 {
     font-family: "Ubuntu", sans-serif;
+    font-size: 1.3rem;
     
 }
 
@@ -29,8 +56,8 @@ h3 {
 }
 
 #btn {
-    background-color: #A9F0D1;
-    color: #FFA69E;
+    background-color: #232323;
+    color: #c5b358;
     font-family: "Ubuntu", sans-serif;
     font-size: 24px;
     font-weight: 700;
@@ -43,10 +70,18 @@ h3 {
 
 }
 
+#btn:hover,
+#btn:focus {
+    cursor: pointer;
+    background-color: #c5b358;
+    color: #232323;
+}
+
 .container {
 
     width: 600px;
-    background-color: #fcdedc;
+    background-color: #3D5A80;
+    /* background-color: #fcdedc; */
     padding-left: 20px;
     padding-right: 20px;
     margin: auto;
@@ -62,15 +97,17 @@ h3 {
 .img1, .img2, .img3 {
     object-fit: cover;
     border-radius: 30%;
-}
+    opacity: 70%
+
+}   
     
 
 .img1 {
     background-image: url("images/mailTruck.jpg");
     object-fit: cover;
     margin: auto;
-    width: 500px;
-    height: 400px;
+    width: 300px;
+    height: 300px;
 }
 
 
@@ -78,16 +115,16 @@ h3 {
     background-image: url("images/coffeeRoaster.jpg");
     object-fit: cover;
     margin: auto;
-    width: 500px;
-    height: 400px;
+    width: 300px;
+    height: 300px;
 }
 
 .img3 {
     background-image: url("images/coffeeBag.jpg");
     object-fit: cover;
     margin: auto;
-    width: 500px;
-    height: 400px;
+    width: 300px;
+    height: 300px;
 }
 
 
@@ -97,15 +134,39 @@ h3 {
     height: 100px;
     top: 0px;
     left: 0px;
-    background-color:#FFA69E; 
-    color: #A9F0D1;
-    text-shadow: 1px 3px black;
+    background-color: #3D5A80;
+
+    /* background-color:#FFA69E;  */
+    /* color: #A9F0D1; */
+    text-shadow: 1px 1px #c5b358;
     font-family: 'Playball', sans-serif;
     font-size: 24px;
     padding: 0;
     z-index: 5;
     opacity: 90%;
 }
+
+.header .clifftop {
+    color: rgba(197,179,88, .65);
+    text-shadow: none;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 100%;
+    height: 100px;
+    background-color: #3D5A80; 
+    color: rgba(197,179,88, .85);
+    /* color: rgba(0,0,0, .65); */
+    /* text-shadow: 1px 3px black; */
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 24px;
+    opacity: 90%;
+}
+
+
 
 .header li {
     font-size: 12px;
@@ -130,15 +191,11 @@ h3 {
     margin-left: 15px;
 }
 
-.backtotop {
-    color: #FFA69E;
-}
-
 a {
     float: right;
     text-decoration: none;
     font-family: "Rock Salt", cursive;
-    color:#A9F0D1;
+    color:rgba(197,179,88, .85);
     font-weight: 700;
     font-size: 18px;
     padding: 0 20px; 
@@ -150,9 +207,10 @@ a {
 
 .features-text {
     font-family: "Ubuntu", sans-serif;
-    font-size: 18px;
+    font-size: 1.3rem;
     padding-bottom: 20px;
 }
+
 
 #features {
     scroll-margin-top: 100px;
@@ -176,11 +234,13 @@ a {
 .carousel-card {
     width: 600px;
     height: 350px;
-    background-color: #d4fcea;
+    background-color: #7cafcc;
     font-family: "Ubuntu", sans-serif;
     font-size: 1.5rem;
     padding: 10px 5px 10px 15px;
     margin-left: -10px;
+    /* border: 1px solid black; */
+    box-shadow: 1px 1px 2px 2px rgba(197,179,88, .85);
 }
 
 .carousel h1 {
@@ -237,6 +297,7 @@ figure {
     cursor: pointer;
     width: 20px;
     height: 20px;
+    
 }
 
 .carousel .carousel-actions button#carousel-button-prev {
@@ -262,7 +323,7 @@ figure {
 
 /* SHADOW POP */
 
-.shadow-pop-tr {
+/* .shadow-pop-tr {
 	animation:  shadow-pop-tr 1s cubic-bezier(0.470, 0.000, 0.745, 0.715) both;
 }
 
@@ -275,7 +336,7 @@ figure {
       box-shadow: 1px -1px #3e3e3e, 2px -2px #3e3e3e, 3px -3px #3e3e3e, 4px -4px #3e3e3e, 5px -5px #3e3e3e, 6px -6px #3e3e3e, 7px -7px #3e3e3e, 8px -8px #3e3e3e;
       transform: translateX(-8px) translateY(8px);
     }
-  }
+  } */
 
   /* PULSATE */
 
