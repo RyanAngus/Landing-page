@@ -110,7 +110,7 @@ h2 {
     font-family: "Barlow", sans-serif;
     text-transform: uppercase;
     font-weight: 700;
-    font-size: 2rem;
+    font-size: 3rem;
     color:rgba(197,179,88, .85);
     text-shadow: 3px 3px #232323;
 } 
@@ -135,12 +135,13 @@ h2 {
     
 h3 {
     font-family: "Ubuntu", sans-serif;
-    font-size: 1.25rem;
+    font-size: 2rem;
     
 }
 
 p {
-    font-size: 1rem;
+    font-size: 2rem;
+
 }
 
 .btn-div {
