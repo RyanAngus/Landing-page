@@ -401,10 +401,12 @@ figure {
         align-items: center;
         justify-content: center;
         margin: 0 auto;
+        
     }
 
     .clifftop {
         font-size: 2rem;
+        padding: 1em 0;
 
     }
     
