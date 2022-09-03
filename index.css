@@ -64,7 +64,7 @@ body {
     top: 0px;
     left: 0px;
     background-color: #3D5A80; 
-    font-size: 24px;
+    font-size: 1rem;
     padding: 0;
     z-index: 5;
     opacity: 90%;
@@ -103,14 +103,14 @@ body {
     margin-left: auto;
     margin-right: auto;
     font-family: 'Barber', sans-serif;
-    font-size: 2.5rem;
+    font-size: 2rem;
 }
 
 h2 {
     font-family: "Barlow", sans-serif;
     text-transform: uppercase;
     font-weight: 700;
-    font-size: 3rem;
+    font-size: 1.5rem;
     color:rgba(197,179,88, .85);
     text-shadow: 3px 3px #232323;
 } 
@@ -135,12 +135,12 @@ h2 {
     
 h3 {
     font-family: "Ubuntu", sans-serif;
-    font-size: 2rem;
+    font-size: 1.25rem;
     
 }
 
 p {
-    font-size: 2rem;
+    font-size: 1rem;
 
 }
 
@@ -154,7 +154,7 @@ p {
     background-color: #232323;
     color: #c5b358;
     font-family: "Ubuntu", sans-serif;
-    font-size: 24px;
+    font-size: .5rem;
     font-weight: 700;
     text-shadow: 1px 1px black;
     padding: 15px 30px;
@@ -244,7 +244,7 @@ a {
     text-decoration: none;
     font-family: "Barlow", sans-serif;
     color:rgb(197,179,88);
-    font-size: 20px;
+    font-size: 1rem;
     padding: 0 20px; 
 }
 
