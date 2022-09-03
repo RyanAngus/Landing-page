@@ -1,7 +1,23 @@
 /* FONTS */
 /* font-family: 'Ubuntu', sans-serif; */
 /* font-family: 'Rock Salt', cursive; */
-@font-face { font-family: Playball; src: url('Playball-Regular.ttf'); } 
+/* font-family: 'Barlow', sans-serif; */
+
+
+@font-face { 
+    font-family: Playball; 
+    src: url('Playball-Regular.ttf'); 
+}
+
+@font-face {
+    font-family: Barber;
+    src: url(Barber-Complete.woff);
+}
+
+@font-face {
+    font-family: Barber-Outline;
+    src: url(Barber-Outline.woff);
+}
 /*  */
 
 /* COLORS */
@@ -14,20 +30,90 @@
 
 /*  */
 
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
 body {
     /* background-color: rgba(238, 108, 77, .65); */
     /* background-image: url(images/swirl_pattern.png); */
-    background-image: url(images/tiles.png);
+    /* background-image: url(images/tiles.png); */
+    background: linear-gradient(45deg, #C5B358, #98C1D9);
     padding: 0;
     margin: 0;
     line-height: 1.6;
 }
 
+.container {
+    width: 80%;
+    background-color: #3D5A80;
+    /* background-color: #fcdedc; */
+    padding-left: 20px;
+    padding-right: 20px;
+    margin: auto;
+    box-shadow: 10px 10px #232323;
+}
+
+.header {
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 125px;
+    top: 0px;
+    left: 0px;
+    background-color: #3D5A80; 
+    font-size: 24px;
+    padding: 0;
+    z-index: 5;
+    opacity: 90%;
+}
+
+.header-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+.header .clifftop {
+    color: rgba(197,179,88, .65);
+    text-shadow: none;
+}
+
+.header li {
+    font-size: 12px;
+}
+
+
+  #nav-bar {
+
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 2;
+}
+
+
+
+.clifftop {
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: 'Barber', sans-serif;
+    font-size: 2.5rem;
+}
+
 h2 {
-    font-family: "Rock Salt", cursive;
+    font-family: "Barlow", sans-serif;
+    text-transform: uppercase;
     font-weight: 700;
+    font-size: 1.5rem;
     color:rgba(197,179,88, .85);
-    text-shadow: 1px 1px #232323;
+    text-shadow: 3px 3px #232323;
 } 
 
 .centerTxt {
@@ -35,7 +121,8 @@ h2 {
 }
 
 .line {
-    border-bottom: 1px solid #232323;
+    border-bottom: 10px solid #232323;
+    border-image: linear-gradient(45deg, #98C1D9, #C5B358) 1;
     padding: 2em;
     margin-bottom: 1em;
     width: 50%;
@@ -49,8 +136,12 @@ h2 {
     
 h3 {
     font-family: "Ubuntu", sans-serif;
-    font-size: 1.3rem;
+    font-size: 1.25rem;
     
+}
+
+p {
+    font-size: 1rem;
 }
 
 .btn-div {
@@ -81,16 +172,6 @@ h3 {
     color: #232323;
 }
 
-.container {
-
-    width: 600px;
-    background-color: #3D5A80;
-    /* background-color: #fcdedc; */
-    padding-left: 20px;
-    padding-right: 20px;
-    margin: auto;
-    box-shadow: 10px 10px #232323;
-}
 
 .overview {
     display: flex;
@@ -131,30 +212,6 @@ h3 {
     height: 300px;
 }
 
-
-.header {
-    position: fixed;
-    width: 100%;
-    height: 100px;
-    top: 0px;
-    left: 0px;
-    background-color: #3D5A80;
-
-    /* background-color:#FFA69E;  */
-    /* color: #A9F0D1; */
-    text-shadow: 1px 1px #c5b358;
-    font-family: 'Playball', sans-serif;
-    font-size: 24px;
-    padding: 0;
-    z-index: 5;
-    opacity: 90%;
-}
-
-.header .clifftop {
-    color: rgba(197,179,88, .65);
-    text-shadow: none;
-}
-
 footer {
     display: flex;
     justify-content: center;
@@ -170,42 +227,24 @@ footer {
     opacity: 90%;
 }
 
-
-
-.header li {
-    font-size: 12px;
-}
-
-
-  #nav-bar {
-    overflow: hidden;
-    position: fixed;
-    top: 0;
-    width: 100%;
-    z-index: 2;
-}
-
-.header-container {
+ul {
     display: flex;
-    flex-direction: row;
+    justify-content: center;
+
 }
 
-.clifftop {
-    margin-top: 20px;
-    margin-left: 15px;
-}
 
 a {
-    float: right;
+    text-transform: uppercase;
     text-decoration: none;
-    font-family: "Rock Salt", cursive;
-    color:rgba(197,179,88, .85);
-    font-weight: 700;
-    font-size: 18px;
+    font-family: "Barlow", sans-serif;
+    color:rgb(197,179,88);
+    font-size: 20px;
     padding: 0 20px; 
 }
 
   ul li {
+    
     list-style-type: none;
   }  
 
@@ -236,19 +275,19 @@ a {
 }
 
 .carousel-card {
-    width: 550px;
-    height: 350px;
+    width: 350px;
+    height: 250px;
     background-color: #7cafcc;
     font-family: "Ubuntu", sans-serif;
-    font-size: 1.5rem;
-    padding: 10px 5px 10px 15px;
+    font-size: 1rem;
+    padding: 5px 5px 10px 15px;
     margin-left: 15px;
     /* border: 1px solid black; */
     box-shadow: 1px 1px 2px 2px rgba(197,179,88, .85);
 }
 
 .carousel h1 {
-    font-family: 'Rock Salt', cursive;
+    font-family: 'Barlow', sans-serif;
     text-align: center; 
     font-size: 1.5rem;
 }
@@ -277,7 +316,7 @@ figure {
 
 .carousel .carousel-item img {
     width: 100%;
-    max-width: 125px;
+    max-width: 75px;
     border-radius: 50%;
     object-fit: cover;
 }
@@ -325,41 +364,7 @@ figure {
     }
 }
 
-/* SHADOW POP */
 
-/* .shadow-pop-tr {
-	animation:  shadow-pop-tr 1s cubic-bezier(0.470, 0.000, 0.745, 0.715) both;
-}
-
-@keyframes shadow-pop-tr {
-    0% {
-      box-shadow: 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e;
-      transform: translateX(0) translateY(0);
-    }
-    100% {
-      box-shadow: 1px -1px #3e3e3e, 2px -2px #3e3e3e, 3px -3px #3e3e3e, 4px -4px #3e3e3e, 5px -5px #3e3e3e, 6px -6px #3e3e3e, 7px -7px #3e3e3e, 8px -8px #3e3e3e;
-      transform: translateX(-8px) translateY(8px);
-    }
-  } */
-
-  /* PULSATE */
-
-  .pulsate-fwd {
-	animation: pulsate-fwd 0.5s ease-in-out 1s 3 both;
-}
-  
-@keyframes pulsate-fwd {
-    0% {
-      transform: scale(1);
-    }
-    50% {
-      transform: scale(1.1);
-    }
-    100% {
-      transform: scale(1);
-    }
-  }
-  
   
 
 
@@ -371,10 +376,9 @@ figure {
     justify-content: center;
     height: 125px;
     width: 20vw;
-    color: black;
-    
+    color: black; 
   }
-  @media (max-width: 550px) {
-    #features .icon {
-      display: none;
-    }
+
+  @media (min-width: 550px) {
+
+  }
