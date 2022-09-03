@@ -223,9 +223,13 @@ footer {
     /* color: rgba(0,0,0, .65); */
     /* text-shadow: 1px 3px black; */
     font-family: 'Ubuntu', sans-serif;
-    font-size: 24px;
     opacity: 90%;
 }
+
+footer p {
+    font-size: 1rem;
+}
+
 
 ul {
     display: flex;
@@ -269,14 +273,15 @@ a {
 
 .carousel {
     max-width: 700px;
+    margin: 0 auto;
     position: relative;
-    margin-left: 0px;
     margin-bottom: 50px;
     padding: 0px 30px 40px 30px;
 }
 
 .carousel-card {
     width: 95%;
+    margin: 0 auto;
     background-color: #7cafcc;
     font-family: "Ubuntu", sans-serif;
     font-size: 1rem;
