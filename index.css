@@ -411,8 +411,7 @@ figure {
     .img1,
     .img2,
     .img3 {
-        width: 200px;
-        height: 200px;
+        width: 100%;
         object-fit: cover;
         object-position: center;
     }
