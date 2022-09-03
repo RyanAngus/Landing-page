@@ -396,10 +396,14 @@ figure {
 
     .header {
         height: 150px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
     }
 
     .clifftop {
-        font-size: 1rem;
+        font-size: 2rem;
+
     }
 
 
