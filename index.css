@@ -382,15 +382,25 @@ figure {
 
 /* mobile */
   
-  #features .icon {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 125px;
-    width: 20vw;
-    color: black; 
-  }
+
 
   @media (min-width: 550px) {
+
+  }
+
+  @media (max-width: 350px) {
+
+    .container {
+        width: 75%;
+    } 
+
+    .header {
+        height: 150px;
+    }
+
+    .clifftop {
+        
+    }
+
 
   }
