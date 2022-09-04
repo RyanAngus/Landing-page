@@ -44,3 +44,19 @@ setInterval(function() {
 }, 5000)                        //animating slides
 
 
+var prevScrollpos = window.pageYOffset;
+window.onscroll = function() {
+  var currentScrollPos = window.pageYOffset;
+  if (prevScrollpos > currentScrollPos) {
+    document.getElementById("header").style.top = "0";
+  } else {
+    document.getElementById("header").style.top = "-200px";
+  }
+  if (prevScrollpos > currentScrollPos) {
+    document.getElementById("nav-bar").style.top = "0";
+  } else {
+    document.getElementById("nav-bar").style.top = "-200px";
+  }
+
+  prevScrollpos = currentScrollPos;
+}
