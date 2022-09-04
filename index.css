@@ -176,6 +176,10 @@ p {
     color: #232323;
 }
 
+.dropbtn {
+    display: none;
+}
+
 
 .overview {
     display: flex;
@@ -448,11 +452,18 @@ figure {
         
     }
 
+    .dropbtn {
+        display: block;
+        border: none;
+        color:#C5B358;
+    }
+
     .clifftop {
         font-size: 1.75rem;
         padding: 1em 0;
 
     }
+
     
     .img1,
     .img2,
