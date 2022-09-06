@@ -489,9 +489,6 @@ figure {
         margin: 0;
       }
       
-      .dropdown:hover .dropbtn {
-        background-color: #C5B358;
-      }
       
       .dropdown-content {
         display: none;
@@ -511,12 +508,6 @@ figure {
         text-align: left;
       }
       
-      .dropdown-content a:hover {
-        background-color: #ddd;
-      }
-      
-      .dropdown:hover .dropdown-content {
-        display: block;
       }
 
     .clifftop {
